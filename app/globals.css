@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  --color-brand-50: #f0fdf4;
+  --color-brand-100: #dcfce7;
+  --color-brand-200: #bbf7d0;
+  --color-brand-300: #86efac;
+  --color-brand-400: #4ade80;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #16a34a;
+  --color-brand-700: #0e7a3d;
+  --color-brand-800: #0a5c2e;
+  --color-brand-900: #073a20;
+  --color-brand-950: #052e1a;
+
+  --color-mist: #f4faf6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+/* Slim, tidy scrollbars for drawers and tab rows */
+.nice-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.nice-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nice-scroll::-webkit-scrollbar-thumb {
+  background: #bbf7d0;
+  border-radius: 9999px;
+}
